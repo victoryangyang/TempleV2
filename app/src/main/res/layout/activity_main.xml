@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/temple2"
+    tools:context="uw_milwaukee.templev1.MainActivity">
+
+    <TextView
+        android:id="@+id/mainactivity_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#6c99b8"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Temple Main"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#f9f8f4"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/main_buttonBGL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/mainactivity_textView"
+        android:layout_centerHorizontal="true"
+        android:text="Blood Glucose Levels" />
+
+    <Button
+        android:id="@+id/main_buttonDA"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_buttonBGL"
+        android:text="Diet Activites" />
+
+    <Button
+        android:id="@+id/main_buttonEA"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_buttonDA"
+        android:text="Exercise Activites" />
+
+    <Button
+        android:id="@+id/main_buttonMed"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/main_buttonEA"
+        android:layout_centerHorizontal="true"
+        android:text="Medication" />
+
+    <Button
+        android:id="@+id/main_buttonPR"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_buttonMed"
+        android:text="Prescribed Regimen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/main_buttonPR">
+
+        <Button
+            android:id="@+id/main_buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/main_buttonData"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Data" />
+
+        <Button
+            android:id="@+id/main_buttonQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Query" />
+    </LinearLayout>
+</RelativeLayout>
