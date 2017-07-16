@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/temple"
+    tools:context="uw_milwaukee.templev1.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_textViewWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_editTextUsername"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp"
+        android:text="Welcome To Temple"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/login_editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp" />
+
+    <EditText
+        android:id="@+id/login_edittextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/login_editTextUsername"
+        android:layout_alignStart="@+id/login_editTextUsername" />
+
+    <Button
+        android:id="@+id/login_buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_edittextPassword"
+        android:layout_alignStart="@+id/login_edittextPassword"
+        android:layout_below="@+id/login_edittextPassword"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:typeface="normal" />
+</RelativeLayout>
